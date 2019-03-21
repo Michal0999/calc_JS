@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simple calculator by Micał Konatkowski</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="calc.js"></script>
+</head>
+
+<body>
+	<div class="panel">
+		<input type="text" id="input" placeholder="0" readonly="readonly">
+		<input type="text" id="result" readonly="readonly">
+
+		<input class="btn" type="button" value="CE " onclick="clearScreen()">
+		<input class="btn" type="button" value="&#247" onclick="getOperand('/')">
+		<input class="btn" type="button" value="x" onclick="getOperand('x')">
+		<input class="btn" type="button" value=" &#8592 " onclick="backspace()">
+
+		<input class="btn" type="button" value="1" onclick="getNumber(1)">
+		<input class="btn" type="button" value="2" onclick="getNumber(2)">
+		<input class="btn" type="button" value="1" onclick="getNumber(3)">
+		<input class="btn" type="button" value="+" onclick="getOperand('+')">
+
+		<input class="btn" type="button" value="4" onclick="getNumber(4)">
+		<input class="btn" type="button" value="5" onclick="getNumber(5)">
+		<input class="btn" type="button" value="6" onclick="getNumber(6)">
+		<input class="btn" type="button" value="-" onclick="getOperand('-')">
+
+		<input class="btn" type="button" value="7" onclick="getNumber(7)">
+		<input class="btn" type="button" value="8" onclick="getNumber(8)">
+		<input class="btn" type="button" value="9" onclick="getNumber(9)">
+		<input class="btn" type="button" value="( )" onclick="brackets()">
+
+		<input class="btn" type="button" value="+/-" onclick="getOperand('+/-')">
+		<input class="btn" type="button" value="0" onclick="getNumber(0)">
+		<input class="btn" type="button" value=" = " onclick="compute()">
+	</div>
+
+
+</body>
+
+</html>
